@@ -1,0 +1,1 @@
+I build for individuals who desire fast and secure user-friendly web applications . I prioritze precision, secuirty, & real people getting real results. If it doesn't provide a solution or consideration for the user I will not build it.
