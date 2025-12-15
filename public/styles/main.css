@@ -3,22 +3,24 @@
     margin: 0;
     padding: 0;
     font-family: system-ui, sans-serif;
- }
+}
 
- body {
+body {
     background: #0f0f0f;
     color: #f5f5f5;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
- }
+    min-height: 100vh;
+    padding: 2rem;
+}
 
- .container { 
+.container { 
     text-align: center;
- }
+}
 
- button {
+button {
     margin: 1rem;
     padding: 0.75rem 1rem;
     border: none;
@@ -26,6 +28,11 @@
     color: #000;
     font-weight: bold;
     cursor: pointer;
- }
+}
 
- 
+#projects {
+    margin-top: 100vh;
+    padding: 4rem 2rem;
+    background: #151515;
+    text-align: center;
+}
