@@ -1,5 +1,9 @@
-const button = document.getElementById("view-projects");
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("view-projects");
 
-button.addEventListener("click", () => {
+  if (!button) return;
+
+  button.addEventListener("click", () => {
     alert("Projects dropping soon. Stay locked in.");
-}); 
+  });
+});
