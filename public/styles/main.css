@@ -36,3 +36,35 @@ button {
     background: #151515;
     text-align: center;
 }
+
+
+.project-card { 
+    padding: 5rem 1rem;
+    margin-bottom: 3;
+    border: solid black 1px;
+}
+
+.project-card:hover {
+    background-color: #1a1a1a;
+}
+
+.project-title {
+    margin-bottom: 6;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.project-tech { 
+    font-size: 16pt;
+    font-color: gray;
+    margin: 2;
+}
+
+.project-link {
+    font-color: blue;
+    text-decoration: underline;
+}
+
+.project-link:hover { 
+    color: gold;
+}
