@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CodeKage</title>
   <link rel="stylesheet" href="/styles/main.css" />
 </head>
@@ -17,11 +17,15 @@
   <section id="projects">
     <h2>Projects</h2>
     <p>Full-stack and AI-powered applications currently in development.</p>
-  </section>
 
-<section>
-  <div id="portfolio"></div>
-</section>
+    <div id="filters" aria-label="Project filters">
+      <button class="filter-btn" data-tech="all" type="button">All</button>
+      <button class="filter-btn" data-tech="Azure" type="button">Azure</button>
+      <button class="filter-btn" data-tech="Cisco" type="button">Cisco</button>
+    </div>
+
+    <div id="portfolio"></div>
+  </section>
 
   <script src="/scripts/main.js"></script>
 </body>
