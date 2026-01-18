@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let selectedTech = "all";
+const savedTech = localStorage.getItem("selectedTech");
+if (savedTech) selectedTecch = savedTech;
 
   const button = document.getElementById("view-projects");
   const projectsSection = document.getElementById("projects");
@@ -27,6 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderProjects(list) {
     portfolio.innerHTML = "";
 
+    if (list.length == 0) {
+      const msg = document.createElement("p");
+      msg.textContent = "No projects found for theis filter.";
+      portfolio.appendChild(msg);
+      return;
+    }
+
     list.forEach((project) => {
       const projectDiv = document.createElement("div");
       projectDiv.classList.add("project-card");
@@ -53,14 +62,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function updateActiveFilterButton() {
+    filterButtons.forEach((btn) => {
+      const isActive = btn.dataset.tech === selectedTech;
+      btn.classList.toggle("active", isActive);
+    });
+  }
+
   // Initial render
   renderProjects(getFilteredProjects());
+  updateActiveFilterButton();
 
   // Wire up filter buttons
   filterButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       selectedTech = btn.dataset.tech;
+      localStorage.setItem("selectedTech", selectedTech);
       renderProjects(getFilteredProjects());
+      updateActiveFilterButton();
     });
   });
 });

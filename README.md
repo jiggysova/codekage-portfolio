@@ -1,5 +1,5 @@
 # codekage-portfolio
-Clean, fast, and securew web applications built with intention.
+Clean, fast, and secure web applications built with intention.
 
 Live: https://codekage-portfolio.vercel.app/
 Tech: HTML, CSS, Github Codespaces, Vercel

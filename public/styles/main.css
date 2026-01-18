@@ -51,6 +51,11 @@ button {
   margin: 0;
 }
 
+.filter-btn.active {
+  outline: 2px solid #4da3ff;
+  background: #e6f2ff;
+}
+
 #portfolio {
   display: grid;
   gap: 1rem;
